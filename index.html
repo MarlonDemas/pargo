@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pargo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .hero {
+            background-image: url("img/home.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .hero-body {
+            margin: auto;
+            width: 67%;
+        }
+        
+        .navbar-item img {
+            max-height: 77px;
+        }
+        
+        .slogan {
+            padding-left: 1.5em;
+        }
+        
+        #track {
+            background-color: #1B75BC;
+            padding-left: 2em;
+            padding-right: 2em;
+            color: white;
+        }
+        
+        #login {
+            background-color: #FFF200;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+        
+        .navbar-end a:hover {
+            transition: all 0.5s;
+            background-color: black !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar is-white">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="img/logo.svg" alt="Logo">
+                    <span class="slogan has-text-weight-bold">parcels on the go!</span>
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                    <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu">
+                <div class="navbar-end">
+                    <a id="login" class="navbar-item is-uppercase has-text-weight-bold">
+                          Login
+                        </a>
+                    <a id="track" class="navbar-item is-uppercase has-text-weight-bold">
+                          Track
+                        </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 has-text-white is-uppercase has-text-weight-bold">
+                    The leading click and collect and return logistics solution for your business
+                </h1>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
