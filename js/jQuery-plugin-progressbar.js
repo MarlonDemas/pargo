@@ -19,7 +19,7 @@
 			};
 			// console.log(opts);
 	
-			$target.append('<div class="background"></div><div class="rotate"></div><div class="left"></div><div class="right"></div><div class=""><span>' + opts.percent + '%</span></div>');
+			$target.append('<div class="background"></div><div class="rotate"></div><div class="left"></div><div class="right"></div><div class=""><span></span></div>');
 	
 			$target.find('.background').css('background-color', opts.backgroundColor);
 			$target.find('.left').css('background-color', opts.backgroundColor);
