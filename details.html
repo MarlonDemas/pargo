@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
+
 <body>
-    
+    <nav class="navbar is-white">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="img/logo.svg" alt="Logo">
+                    <span class="slogan has-text-weight-bold">parcels on the go!</span>
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                    <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu">
+                <div class="navbar-end">
+                    <a id="login" class="navbar-item is-uppercase has-text-weight-bold">
+                          Login
+                        </a>
+                    <a id="track" class="navbar-item is-uppercase has-text-weight-bold">
+                          Track
+                        </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 has-text-white is-uppercase has-text-weight-bold">
+                    Shop online and never miss a delivery again
+                </h1>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="tabs is-centered is-fullwidth">
+            <ul>
+                <li class="title business is-5 li has-text-weight-bold is-uppercase has-text-centered">I'm a Business</li>
+                &#124;
+                <li class="title shopper active is-5 has-text-weight-bold is-uppercase has-text-centered">I'm a Shopper</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="shopper">
+                <h2 class="title is-5 has-text-centered">Track Order</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ducimus aut nesciunt, voluptatem fuga reiciendis eligendi minus. Odio, possimus maiores, maxime cum omnis in nam animi ducimus quia doloribus consequuntur. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Magni temporibus eveniet voluptatibus excepturi quam doloribus voluptates, id unde repellendus natus nobis, perspiciatis harum ipsum. Eos officiis assumenda dolorem excepturi provident? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Quas quae molestias laudantium cum. Cupiditate quisquam, sapiente similique aperiam in nesciunt libero pariatur, neque quia, assumenda quasi? Ullam maiores totam repellendus?
+                </p>
+
+               <div class="columns">
+                   <div class="column">
+                        <div class="progress-bar1" data-percent="26" data-duration="1000" data-color="#ccc,#1B75BC"></div>
+                   </div>
+                   <div class="column is-three-fifths order">
+                       <h2 class="title is-5 is-uppercase">Order Progress</h2>
+                       <p>Order Number: 7876342HJNJKKSN87</p>
+                       <div class="order-progress">
+                           <span>3 Days Remaining</span>
+                           <span>With Courier</span>
+                       </div>
+                   </div>
+                   <div class="column">
+                       <a href="details.html" target="_blank"><h3 class="title is-2 has-text-white has-text-weight-bold has-text-centered is-uppercase">More Info</h3></a>
+                   </div>
+               </div>
+
+               <hr>
+               
+               <div class="columns">
+                   <div class="column">
+                        <div class="progress-bar1" data-percent="16" data-duration="1000" data-color="#ccc,#1B75BC"></div>
+                   </div>
+                   <div class="column is-three-fifths order">
+                       <h2 class="title is-5 is-uppercase">Order Progress</h2>
+                       <p>Order Number: 457FGHNHJ8876789</p>
+                       <div class="order-progress">
+                           <span>4 Days Remaining</span>
+                           <span>With Courier</span>
+                       </div>
+                   </div>
+                   <div class="column">
+                   </div>
+               </div>
+            </div>
+            <div class="business" style="display: none; padding-bottom: 50vh">
+                This is an empty tab.
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery JS 3.1.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/jQuery-plugin-progressbar.js"></script>
+    <script src="js/js.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+        
+        $('li.shopper, li.business').click(function() {
+            if (!$(this).hasClass('active')) {
+                $('li.shopper, li.business').removeClass('active');
+                $(this).addClass('active');
+                $('div.shopper, div.business').toggle();
+            }
+        });
+    </script>
 </body>
+
 </html>
