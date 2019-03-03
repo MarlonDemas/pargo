@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma-tooltip.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
@@ -65,38 +66,24 @@
 
                <div class="columns">
                    <div class="column">
-                        <div class="progress-bar1" data-percent="26" data-duration="1000" data-color="#ccc,#1B75BC"></div>
+                        <img src="img/package.png" alt="">
                    </div>
-                   <div class="column is-three-fifths order">
+                   <div class="column is-four-fifths order">
                        <h2 class="title is-5 is-uppercase">Order Progress</h2>
-                       <p>Order Number: 7876342HJNJKKSN87</p>
-                       <div class="order-progress">
-                           <span>3 Days Remaining</span>
-                           <span>With Courier</span>
-                       </div>
-                   </div>
-                   <div class="column">
-                       <a href="details.html" target="_blank"><h3 class="title is-2 has-text-white has-text-weight-bold has-text-centered is-uppercase">More Info</h3></a>
+                       <p style="margin-bottom: 1em;">Order Number: 7876342HJNJKKSN87</p>
+                       <p style="margin-bottom: 2em;">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam provident dolore quos eveniet quasi delectus excepturi vero culpa eum voluptatem atque itaque a, assumenda cumque voluptates eos odit eius nesciunt!Aperiam iure, pariatur neque similique nam odio corrupti! Aliquam laudantium praesentium tempore aliquid qui necessitatibus accusamus amet molestiae hic illo vitae ex minus sunt excepturi, provident assumenda nulla ad corrupti?
+                       </p>
                    </div>
                </div>
 
-               <hr>
+               <progress class="progress is-link tooltip is-tooltip-active" data-tooltip="26%" value="26" max="100">26%</progress>
                
-               <div class="columns">
-                   <div class="column">
-                        <div class="progress-bar1" data-percent="16" data-duration="1000" data-color="#ccc,#1B75BC"></div>
-                   </div>
-                   <div class="column is-three-fifths order">
-                       <h2 class="title is-5 is-uppercase">Order Progress</h2>
-                       <p>Order Number: 457FGHNHJ8876789</p>
-                       <div class="order-progress">
-                           <span>4 Days Remaining</span>
-                           <span>With Courier</span>
-                       </div>
-                   </div>
-                   <div class="column">
-                   </div>
+               <div class="order">
+                   <span class="time">3 days remaining</span>
+                    <span class="place has-text-right">Currently: With Courier</span>
                </div>
+               
             </div>
             <div class="business" style="display: none; padding-bottom: 50vh">
                 This is an empty tab.
@@ -106,8 +93,6 @@
 
     <!-- jQuery JS 3.1.0 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/jQuery-plugin-progressbar.js"></script>
-    <script src="js/js.js"></script>
 
 
     <script>

@@ -72,9 +72,21 @@ h3 {
 }
 
 .order-progress span {
-    background-color: #B2B5B1;
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 1em 4em 1em 0.5em;
-    border-radius: 3px;
+    border-radius: 5px;
+}
+
+.order {
+    display: block;
+    margin: auto;
+    width: 85%;
+}
+
+.order .place {
+    display: inline-block;
+    width: 80%;
+    text-align: right;
 }
 
 .progress-bar1 div {
