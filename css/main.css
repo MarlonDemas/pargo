@@ -61,10 +61,6 @@ h2 {
     padding-bottom: 1em;
 }
 
-h2.is-uppercase {
-    padding-bottom: 0;
-}
-
 h3 {
     background-color: #1B75BC;
     padding-top: 0.5em;
@@ -87,6 +83,7 @@ h3 {
     display: inline-block;
     width: 80%;
     text-align: right;
+    margin-bottom: 3em;
 }
 
 .progress-bar1 div {
