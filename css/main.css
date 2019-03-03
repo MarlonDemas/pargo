@@ -73,15 +73,15 @@ h3 {
     border-radius: 5px;
 }
 
-.order {
+.order-p {
     display: block;
     margin: auto;
     width: 85%;
 }
 
-.order .place {
+.order-p .place {
     display: inline-block;
-    width: 80%;
+    width: 75%;
     text-align: right;
     margin-bottom: 3em;
 }
@@ -157,6 +157,12 @@ h3 {
 
     .progress-bar1 div {
         left: 42.5%;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    .order-p .place {
+        width: 55%;
     }
 }
 
