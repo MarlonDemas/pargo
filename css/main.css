@@ -176,6 +176,10 @@ h3 {
         margin-top: 1em;
     }
 
+    .order-p .place {
+        display: inline;
+    }
+
     .progress-bar1 div {
         left: 35%;
     }
