@@ -1,3 +1,8 @@
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
 .hero {
     background-image: url("../img/home.jpg");
     background-size: cover;
@@ -142,19 +147,15 @@ h3 {
     .title.is-1 {
         font-size: 2em;
     }
-
     .order {
         padding-top: 7em;
     }
-
     .column {
         text-align: center;
     }
-
     .section {
         text-align: center;
     }
-
     .progress-bar1 div {
         left: 42.5%;
     }
@@ -170,20 +171,16 @@ h3 {
     .title.is-1 {
         font-size: 1.75em;
     }
-
     .order-progress span {
         display: block;
         margin-top: 1em;
     }
-
     .order-p .place {
         display: inline;
     }
-
     .progress-bar1 div {
         left: 35%;
     }
-
     .title.is-5 {
         font-size: 1em;
     }
